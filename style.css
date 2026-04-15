@@ -1,0 +1,404 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 16px;
+  color: #1a1a2e;
+  background-color: #f5f7fa;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: #5a92db;
+  color: #ffffff;
+  border-color: #1a73e8;
+}
+
+.btn-primary:hover {
+  background-color: #4277bc;
+  border-color: #1558b0;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #2e66b1;
+  border-color: #2f69b4;
+}
+
+.btn-secondary:hover {
+  background-color: #e8f0fe;
+}
+
+
+.site-header {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 0 40px;
+  height: 64px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #dbdbdb;
+}
+
+.main-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav a {
+  color: #d0d6e0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.main-nav a:hover {
+  color: #ffffff;
+}
+
+
+.section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.section-subtitle {
+  color: #5f6368;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #161652;
+}
+
+
+.section-hero {
+  background-color: #e8f0fe;
+  padding: 72px 40px;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1b1b8a;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: #3c4043;
+  margin-bottom: 32px;
+  max-width: 520px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #3c3ca5;
+  padding: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.section-servicios {
+  background-color: #f5f7fa;
+  padding: 72px 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.services-container article {
+  background-color: #ffffff;
+  border: 1px solid #596a8a;
+  padding: 28px 24px;
+  flex: 1 1 calc(33.333% - 24px);
+  min-width: 220px;
+}
+
+.services-container article img {
+  width: 200px;
+  height: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services-container article h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #56567a;
+  margin-bottom: 10px;
+}
+
+.services-container article p {
+  font-size: 14px;
+  color: #5f6368;
+  line-height: 1.6;
+}
+
+
+.section-profesionales {
+  background-color: #1a1a2e;
+  padding: 72px 40px;
+}
+
+.section-profesionales h2 {
+  color: #ffffff;
+}
+
+.section-profesionales .section-subtitle {
+  color: #9aa0a6;
+}
+
+.team-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: #252540;
+  border: 1px solid #3a3a5c;
+  padding: 32px 24px;
+  flex: 1 1 calc(33.333% - 24px);
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.team-card .team-role {
+  font-size: 13px;
+  font-weight: 600;
+  color: #4c88d7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.team-card p {
+  font-size: 14px;
+  color: #9aa0a6;
+  line-height: 1.5;
+}
+
+
+.section-contacto {
+  background-color: #f5f7fa;
+  padding: 72px 40px;
+}
+
+.contact-layout {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+
+.contact-info {
+  flex: 1;
+  background-color: #e8f0fe;
+  border: 1px solid #c5d7f7;
+  padding: 32px 28px;
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #3c4043;
+  margin-bottom: 12px;
+}
+
+
+.contact-form-wrapper {
+  flex: 2;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 1px solid #dadce0;
+  background-color: #ffffff;
+  color: #1a1a2e;
+  outline: none;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus,
+.contact-form textarea:focus {
+  border-color: #1a73e8;
+}
+
+.contact-form input[type="submit"] {
+  padding: 13px 32px;
+  background-color: #3b71b8;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: inherit;
+  border: 2px solid #1a73e8;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #3967a4;
+  border-color: #1558b0;
+}
+
+
+.site-footer {
+  background-color: #0d0d1a;
+  color: #9aa0a6;
+  padding: 36px 40px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.footer-brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-rights {
+  font-size: 13px;
+  color: #9aa0a6;
+}
+
+.footer-dev {
+  font-size: 13px;
+  color: #5f6368;
+}
